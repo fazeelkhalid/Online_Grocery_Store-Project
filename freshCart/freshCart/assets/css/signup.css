@@ -1,0 +1,94 @@
+﻿body {
+    background-color: #2A363F;
+}
+
+.logo {
+    float:left;
+    margin-top:20%;
+    margin-left:15%;
+    width: 20%;
+}
+.image1 {
+    height: 100%;
+    width: 100%;
+}
+.vertical_line {
+    float:left;
+    margin-top:10%;
+    margin-left: 10%;
+    background-color:#404A53;
+    width:2px;
+    height: 400px;
+}
+.login {
+    float:left;
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 25%;
+}
+
+input[type=text] {
+    width: 100%;
+    background-color: #2A363F;
+    color: white;
+    font-size: 130%;
+    font-style: italic;
+    padding: 2% 8%;
+    margin: 8px 0;
+    border-color: #404A53;
+    border-radius: 4px;
+    border-top: none;
+    border-left:none;
+    cursor: pointer;
+
+}
+input[type=password] {
+    width: 90%;
+    background-color: #2A363F;
+    color: white;
+    font-size: 130%;
+    font-style: italic;
+    padding: 2% 8%;
+    margin: 8px 0;
+    border-color: #404A53;
+    border-radius: 4px;
+    border-top: none;
+    border-left:none;
+    cursor: pointer;
+
+}
+
+.verticleSpace {
+    margin-top:3%;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    width: 106%;
+    font-style: italic;
+    font-size: 130%;
+    padding: 6% 8%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 0;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+  background-color: #6ED9A0;
+  color: white;
+}
+
+.sign_in {
+    font-style:normal;
+    color: #D5D6D7;
+    font-size: 130%;
+    font-style: italic;
+    background-color: transparent;
+    text-decoration: none;
+}

@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F9ACA39D-61CB-4608-B759-5D1E3A222815}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>freshCart</RootNamespace>
+    <AssemblyName>freshCart</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about.aspx" />
+    <Content Include="adminMyAccount.aspx" />
+    <Content Include="adminView.aspx" />
+    <Content Include="checkOut.aspx" />
+    <Content Include="Coupon.aspx" />
+    <Content Include="frequently-questions.aspx" />
+    <Content Include="home.aspx" />
+    <Content Include="loader.js" />
+    <Content Include="Ordered.aspx" />
+    <Content Include="Privacy Policy.aspx" />
+    <Content Include="Remove supplier.aspx" />
+    <Content Include="RemoveProduct.aspx" />
+    <Content Include="restrictCustomer.aspx" />
+    <Content Include="uploadSupplier.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="myAccount.aspx" />
+    <Content Include="shop.aspx" />
+    <Content Include="signup.aspx" />
+    <Content Include="uploadProduct.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminMasterPage.Master.cs">
+      <DependentUpon>adminMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminMasterPage.Master.designer.cs">
+      <DependentUpon>adminMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="adminMyAccount.aspx.cs">
+      <DependentUpon>adminMyAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminMyAccount.aspx.designer.cs">
+      <DependentUpon>adminMyAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminView.aspx.cs">
+      <DependentUpon>adminView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminView.aspx.designer.cs">
+      <DependentUpon>adminView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="checkOut.aspx.cs">
+      <DependentUpon>checkOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="checkOut.aspx.designer.cs">
+      <DependentUpon>checkOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Coupon.aspx.cs">
+      <DependentUpon>Coupon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Coupon.aspx.designer.cs">
+      <DependentUpon>Coupon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Cart_class.cs" />
+    <Compile Include="DAL\Cart_DAL.cs" />
+    <Compile Include="DAL\checkout_DAL.cs" />
+    <Compile Include="DAL\order_class.cs" />
+    <Compile Include="DAL\Order_DAL.cs" />
+    <Compile Include="DAL\coupon_DAL.cs" />
+    <Compile Include="DAL\Customer_class.cs" />
+    <Compile Include="DAL\globalFunctions.cs" />
+    <Compile Include="DAL\myAccount_DAL.cs" />
+    <Compile Include="DAL\myDAL.cs" />
+    <Compile Include="DAL\product_class.cs" />
+    <Compile Include="DAL\Remove_DAL.cs" />
+    <Compile Include="DAL\Shop_DAL.cs" />
+    <Compile Include="DAL\supplier_class.cs" />
+    <Compile Include="DAL\uploadProduct_DAL.cs" />
+    <Compile Include="frequently-questions.aspx.cs">
+      <DependentUpon>frequently-questions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frequently-questions.aspx.designer.cs">
+      <DependentUpon>frequently-questions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ordered.aspx.cs">
+      <DependentUpon>Ordered.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ordered.aspx.designer.cs">
+      <DependentUpon>Ordered.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Privacy Policy.aspx.cs">
+      <DependentUpon>Privacy Policy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Privacy Policy.aspx.designer.cs">
+      <DependentUpon>Privacy Policy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Remove supplier.aspx.cs">
+      <DependentUpon>Remove supplier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Remove supplier.aspx.designer.cs">
+      <DependentUpon>Remove supplier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveProduct.aspx.cs">
+      <DependentUpon>RemoveProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RemoveProduct.aspx.designer.cs">
+      <DependentUpon>RemoveProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="restrictCustomer.aspx.cs">
+      <DependentUpon>restrictCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="restrictCustomer.aspx.designer.cs">
+      <DependentUpon>restrictCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uploadSupplier.aspx.cs">
+      <DependentUpon>uploadSupplier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uploadSupplier.aspx.designer.cs">
+      <DependentUpon>uploadSupplier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loginSignupMasterPage.Master.cs">
+      <DependentUpon>loginSignupMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginSignupMasterPage.Master.designer.cs">
+      <DependentUpon>loginSignupMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="myAccount.aspx.cs">
+      <DependentUpon>myAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="myAccount.aspx.designer.cs">
+      <DependentUpon>myAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="shop.aspx.cs">
+      <DependentUpon>shop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shop.aspx.designer.cs">
+      <DependentUpon>shop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="signup.aspx.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signup.aspx.designer.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uploadProduct.aspx.cs">
+      <DependentUpon>uploadProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uploadProduct.aspx.designer.cs">
+      <DependentUpon>uploadProduct.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage.Master" />
+    <Content Include="adminMasterPage.Master" />
+    <Content Include="loginSignupMasterPage.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:40874/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,12 @@
+C:\Users\HP\Desktop\freshCart\freshCart\bin\freshCart.dll
+C:\Users\HP\Desktop\freshCart\freshCart\bin\freshCart.pdb
+C:\Users\HP\Desktop\freshCart\freshCart\obj\Debug\freshCart.dll
+C:\Users\HP\Desktop\freshCart\freshCart\obj\Debug\freshCart.pdb
+C:\Users\HP\Desktop\freshCart - Copy (6)\freshCart\bin\freshCart.dll
+C:\Users\HP\Desktop\freshCart - Copy (6)\freshCart\bin\freshCart.pdb
+C:\Users\HP\Desktop\freshCart - Copy (6)\freshCart\obj\Debug\freshCart.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\freshCart - Copy (6)\freshCart\obj\Debug\freshCart.dll
+C:\Users\HP\Desktop\freshCart - Copy (6)\freshCart\obj\Debug\freshCart.pdb
+C:\Users\HP\Desktop\freshCart\freshCart\bin\freshCart.dll.config
+C:\Users\HP\Desktop\freshCart\freshCart\obj\Debug\freshCart.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\freshCart\freshCart\obj\Debug\freshCart.csproj.CoreCompileInputs.cache

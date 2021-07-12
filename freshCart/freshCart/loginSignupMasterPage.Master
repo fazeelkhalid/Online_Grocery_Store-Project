@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="loginSignupMasterPage.master.cs" Inherits="freshCart.loginSignupMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8"/>
+	<title>FreshCart | Grocery and Organic Food Shop</title>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1"/>
+
+    <!-- ::::::::::::::Favicon icon::::::::::::::-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png"/>
+    <!-- ::::::::::::::All CSS Files here :::::::::::::: -->
+    <link href="assets/css/login.css" rel="Stylesheet" type="text/css"/>
+	<link href="assets/css/main.min.css" rel="stylesheet"/>
+	<script src="assets/js/loginJquery.js"></script>
+     <link href="assets/css/loader.css" rel="Stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+        <div>
+            <div class="wrapper fadeInDown">
+                <div id="formContent">
+                <!-- Tabs Titles -->
+
+                <!-- Icon -->
+                    <div class="fadeIn first mt-3">
+                        <img src="assets\img\logo\white_logo.png"  alt="User Icon" />
+                    </div>
+
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+            
+                </div>
+            </div>
+        </div>
+    </form>
+  
+
+</body>
+</html>
